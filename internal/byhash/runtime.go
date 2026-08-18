@@ -50,6 +50,9 @@ type Deb struct {
 }
 
 func (d *Deb) Name() string {
+	if d == nil {
+		return ""
+	}
 	return d.File
 }
 
